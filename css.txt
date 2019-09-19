@@ -1,0 +1,60 @@
+Tipos de Selectores, Pseudo-Clases y Pseudo-Elementos
+
+    * (asterisco)
+        Es el selector universal. Las propiedades se aplicaran a todos los 
+        elementos de nuestro HTML.
+
+    Tipo
+        Son selectores que se aplican a ciertos elementos HTML en especifico.
+        Las propiedades se aplicaron a la etiqueta que queremos, por ejemplo 
+        - p, body, html, div, etc.
+
+    Clase
+        Si nuestra etiqueta HTML tiene un atributo de class podemos usar ese 
+        valor o identificador para que los cambios en el css afecten unicamente
+        a ese elemento.
+
+    ID 
+        Es similar al anterior, si la etiqueta HTML tiene un ID podemos 
+        afectar solo ese elemento.
+
+    Las Pseudo-clases y Pseudo-Elementos
+        Nos permiten ser aun mas especifico con que elementos o partes de nuestro
+        elementos deben recibir los estilos.
+
+    Para usarlas debemos definir el selector base (por ejemplo,p) seguido de dos 
+    puntos y la pseudo-clase que queremos estilizar (por ejemplo: p:first-child).
+    En el caso de los pseudo-Elementos debemos usar el punto 2 veces (p::first-letter).
+
+    /* Asterisco (universal) */
+            * {
+            margin: 0;
+            }
+
+            /* Tipo */
+            h1 {
+            color: red;
+            }
+
+            /* Clase */
+            .saludo {
+            font-size: 2em;
+            }
+
+            /* ID */
+            #id {
+            border-radius: 20px;
+            }
+
+            /* Pseudo-clases */
+            p:first-child {
+            color: white;
+            }
+
+            p:last-child {
+            color: purple;
+            }
+
+            p:nth-child(2n) {
+            color: red;
+            }
